@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.NowPlayingActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOW PLAYING"
+        android:textSize="35sp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="I will be using this section or activity to show the song that is being currently played."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/payments_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="PAYMENTS"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/artists_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/payments_button"
+        android:layout_alignLeft="@+id/payments_button"
+        android:layout_alignStart="@+id/payments_button"
+        android:layout_marginBottom="12dp"
+        android:text="Artists"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/songs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/albums_button"
+        android:layout_alignBottom="@+id/albums_button"
+        android:layout_toLeftOf="@+id/albums_button"
+        android:layout_toStartOf="@+id/albums_button"
+        android:layout_marginRight="40dp"
+        android:text="Songs"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/albums_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/artists_button"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/payments_button"
+        android:layout_toRightOf="@+id/payments_button"
+        android:text="Albums"
+        android:textSize="30sp" />
+
+</RelativeLayout>
